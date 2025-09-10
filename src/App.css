@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F5F5; /* رمادي فاتح */
+  color: #333333; /* رمادي غامق */
+}
+
+.header {
+  background-color: #000000; /* أسود */
+  color: #FFFFFF; /* أبيض */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-card {
+  background: #FFFFFF;
+  border: 1px solid #9E9E9E; /* رمادي */
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.cart {
+  background: #FFFFFF;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+}
